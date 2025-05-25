@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
+    <title>My Profile</title>
+  </head>
+  <body class="bg-gray-50">
+    <header>
+      <section class="flex justify-center bg-blue-50">
+        <nav class="flex justify-between items-center py-2 w-10/12">
+          <div class="md:gap-10 flex gap-2">
+            <div><img src="assets/logo.png" alt="logo" /></div>
+            <div class="flex gap-2">
+              <a href="how renting works.html">
+                <p>Rent</p>
+              </a>
+              <a href="lend to start earning.html">
+                <p>Lend</p>
+              </a>
+            </div>
+          </div>
+          <div class="md:gap-5 flex gap-2">
+            <div class="flex gap-2 items-center">
+              <img src="assets/Group 1961.png" alt="user" class="h-10 w-10" />
+              <a href="profile.html">John Doe</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <p>EN</p>
+              <img src="assets/arrow.png" alt="arrow" />
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <section class="flex justify-center">
+      <div class="md:flex justify-center w-10/12">
+        <div class="lg:w-6/12 md:w-8/12">
+          <div><h2 class="font-bold text-xl my-10">Profile Details</h2></div>
+          <div class="flex-col justify-center items-center text-center">
+            <img
+              src="assets/profile pic.png"
+              alt="pfp"
+              class="justify-self-center mt-5 mb-2 w-25"
+            />
+            <p class="font-bold text-xl">John Doe</p>
+            <sub class="text-gray-400">johndoe@gmail.com</sub>
+          </div>
+          <div class="grid grid-cols-2">
+            <div class="col-span-2">
+              <h3 class="text-gray-400 my-2">Your Statistics</h3>
+            </div>
+            <div class="col-span-2">
+              <div class="flex justify-evenly border border-gray-200 m-2">
+                <div class="my-2">
+                  <h2 class="text-4xl font-semibold my-2">$0.00</h2>
+                  <p class="text-xs text-gray-400">Life time Earnings</p>
+                </div>
+                <img src="assets/earnings.png" alt="earned" class="my-5 w-25" />
+              </div>
+            </div>
+            <div class="border border-gray-200 rounded-md m-2 px-5 py-2">
+              <p class="font-semibold text-lg">0</p>
+              <sub class="text-gray-400">Rentals</sub>
+            </div>
+            <div class="border border-gray-200 rounded-md m-2 px-5 py-2">
+              <p class="font-semibold">0</p>
+              <sub class="text-gray-400">Days With us</sub>
+            </div>
+            <div class="border border-gray-200 rounded-md m-2 px-5 py-2">
+              <p class="font-semibold">0</p>
+              <sub class="text-gray-400">Lends</sub>
+            </div>
+            <div class="border border-gray-200 rounded-md m-2 px-5 py-2">
+              <p class="font-semibold">0</p>
+              <sub class="text-gray-400">Unread Messages</sub>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <div class="flex justify-between my-10">
+            <div>
+              <button
+                class="bg-sky-800 text-white text-sm rounded-md hover:bg-sky-900 cursor-pointer py-3 px-10 w-40"
+              >
+                <p>Inbox</p>
+              </button>
+            </div>
+            <div>
+              <button
+                class="bg-sky-800 text-white text-sm rounded-md hover:bg-sky-900 cursor-pointer py-3 px-10 w-40"
+              >
+                <p>Edit Profile</p>
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-white border border-gray-300 rounded-md w-12/12 my-2 p-5"
+          >
+            <form>
+              <div class="flex">
+                <div class="w-full">
+                  <div class="my-4">
+                    <div class="my-2"><p>First Name</p></div>
+                    <input
+                      type="text"
+                      name="fname"
+                      placeholder="John"
+                      class="border border-gray-200 rounded-md pl-2 py-1 w-11/12"
+                    />
+                  </div>
+                  <div class="md:hidden w-full mt-2">
+                    <div class="my-2">
+                      <p>Last Name</p>
+                    </div>
+                    <input
+                      type="text"
+                      name="lname"
+                      placeholder="Doe"
+                      class="border border-gray-200 rounded-md pl-2 py-1 w-11/12"
+                    />
+                  </div>
+                  <div class="my-4">
+                    <div class="my-2">
+                      <p>Email Address</p>
+                    </div>
+                    <input
+                      type="email"
+                      name="emai;"
+                      placeholder="johndoe@gmail.com"
+                      class="border border-gray-200 rounded-md pl-2 py-1 w-11/12"
+                    />
+                  </div>
+                  <div class="md:hidden mt-2">
+                    <div class="my-2">
+                      <p>Phone Number</p>
+                    </div>
+                    <input
+                      type="text"
+                      name="pnumber"
+                      placeholder="(852) 1234 5678"
+                      class="border border-gray-200 rounded-md pl-2 py-1 w-11/12"
+                    />
+                  </div>
+                  <div class="my-4">
+                    <div class="my-2">
+                      <p>Location</p>
+                    </div>
+                    <input
+                      type="text"
+                      name="Location"
+                      placeholder="Hong Kong > Kawloon > You Tsim Mong > Prince Edward"
+                      class="border border-gray-200 rounded-md pl-2 py-1 w-11/12"
+                    />
+                  </div>
+                </div>
+                <div class="md:flex md:flex-col md:w-full hidden">
+                  <div class="mt-2">
+                    <div class="my-2">
+                      <p>Last Name</p>
+                    </div>
+                    <input
+                      type="text"
+                      name="lname"
+                      placeholder="Doe"
+                      class="border border-gray-200 rounded-md pl-2 py-1 w-11/12"
+                    />
+                  </div>
+                  <div class="mt-2">
+                    <div class="my-2">
+                      <p>Phone Number</p>
+                    </div>
+                    <input
+                      type="text"
+                      name="pnumber"
+                      placeholder="(852) 1234 5678"
+                      class="border border-gray-200 rounded-md pl-2 py-1 w-11/12"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="my-2">Describe Yourself</p>
+                <textarea
+                  name="Describe"
+                  placeholder="Example"
+                  class="border border-gray-200 rounded-md pl-2 py-1 h-30 w-full"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="md:flex md:flex-wrap md:gap-5 bg-blue-50 p-5">
+        <div class="md:w-1/2">
+          <div>
+            <img src="assets/footer logo.png" alt="logo" class="my-10" />
+          </div>
+          <div>
+            <p>
+              Elephant Please was established in 2021 to alleviate and bring
+              awarness to excessive purchasing, over spending and its effect on
+              climate change. Elephant Please is a member of Revision AI
+              Limited.
+            </p>
+          </div>
+          <div class="flex w-full justify-around my-5">
+            <div>
+              <a href="https:facebook.com"
+                ><img src="assets/fb.png" alt="fb" class="p-5"
+              /></a>
+            </div>
+            <div>
+              <a href="https:twitter.com"
+                ><img
+                  src="assets/X.png"
+                  alt="x"
+                  class="bg-blue-900 rounded-full p-5"
+              /></a>
+            </div>
+            <div>
+              <a href="https:youtube.com"
+                ><img src="assets/yt.png" alt="yt" class="p-5"
+              /></a>
+            </div>
+            <div>
+              <a href="https:linkedin.com"
+                ><img src="assets/in.png" alt="in" class="p-5"
+              /></a>
+            </div>
+            <div>
+              <a href="https:instagram.com"
+                ><img src="assets/ig.png" alt="ig" class="p-5"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 class="md:my-5 text-blue-950 font-semibold text-lg my-2">
+            Elephant Please
+          </h1>
+          <div class="grid grid-cols-2 md:gap-5">
+            <div class="my-2">
+              <a href="how renting works.html">How renting works</a>
+            </div>
+            <div class="my-2">
+              <a href="terms of use.html">Terms of use</a>
+            </div>
+            <div class="my-2">
+              <a href="lend to start earning.html">How lending works</a>
+            </div>
+            <div class="my-2">
+              <a href="privacy policy.html">Privacy Policy</a>
+            </div>
+            <div class="my-2">
+              <a href="faqs.html">FAQs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="p-8 text-center bg-blue-100 font-semibold">
+          &copy; Elephant Please 2021
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

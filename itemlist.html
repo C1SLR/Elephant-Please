@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="output.css" />
+    <title>List an item</title>
+  </head>
+  <body>
+    <header>
+      <section class="flex justify-center bg-blue-50">
+        <nav class="flex justify-between items-center py-2 w-10/12">
+          <div class="md:gap-10 flex gap-2">
+            <div><img src="assets/logo.png" alt="logo" /></div>
+            <div class="flex gap-2">
+              <a href="how renting works.html">
+                <p>Rent</p>
+              </a>
+              <a href="lend to start earning.html">
+                <p>Lend</p>
+              </a>
+            </div>
+          </div>
+          <div class="md:gap-5 flex gap-2">
+            <div>
+              <a href="profile.html" class="flex gap-2 items-center">
+                <img src="assets/Group 1961.png" alt="user" class="h-10 w-10" />
+                <p>John Doe</p>
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <p>EN</p>
+              <img src="assets/arrow.png" alt="arrow" />
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <section>
+      <div class="flex-col justify-center">
+        <div class="flex justify-center">
+          <div class="flex w-10/12 m-5 border-b border-b-gray-200">
+            <span class="border-b-2 border-b-blue-500">
+              <h1>List An Item</h1>
+            </span>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="flex w-10/12 m-5">
+            <div class="md:hidden flex">
+              <form>
+                <div class="mb-5">
+                  <p>Title</p>
+                  <input
+                    type="text"
+                    name="title"
+                    placeholder="Input Title"
+                    class="border-2 border-gray-200 rounded-lg w-full pl-5 py-1 my-2"
+                  />
+                </div>
+                <div class="mb-5">
+                  <p>Category</p>
+                  <input
+                    type="text"
+                    name="category"
+                    placeholder="Click to select category"
+                    class="border-2 border-gray-200 rounded-lg w-full pl-5 py-1 my-2"
+                  />
+                </div>
+                <p class="mt-5 mb-2">Rental Price (HKD)</p>
+                <div class="flex justify-between mb-5">
+                  <div>
+                    <p>Daily</p>
+                    <input
+                      type="number"
+                      placeholder="Daily"
+                      class="w-5/6 border-2 border-gray-200 rounded-lg py-1 pl-3 my-2"
+                    />
+                  </div>
+                  <div>
+                    <p>Weekly</p>
+                    <input
+                      type="number"
+                      placeholder="Weekly"
+                      class="w-5/6 border-2 border-gray-200 rounded-lg py-1 pl-3 my-2"
+                    />
+                  </div>
+                  <div>
+                    <p>Monthly</p>
+                    <input
+                      type="number"
+                      placeholder="Monthly"
+                      class="w-5/6 border-2 border-gray-200 rounded-lg py-1 pl-3 my-2"
+                    />
+                  </div>
+                </div>
+                <div class="flex justify-between mb-5">
+                  <div>
+                    <p>Market value (HKD)</p>
+                    <input
+                      type="number"
+                      placeholder="Input Market Value (HKD)"
+                      class="border-2 border-gray-200 rounded-lg text-xs py-3 pl-3 my-2 w-45"
+                    />
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <p>Location</p>
+                  <select
+                    id="myDropdown"
+                    name="category"
+                    class="block w-full px-3 py-2 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm my-2"
+                  >
+                    <option value="">Click to select location</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                    <option value="option4">Option 4</option>
+                  </select>
+                </div>
+                <div class="mb-5">
+                  <p>Description</p>
+                  <textarea
+                    name="description"
+                    placeholder="Input Description"
+                    class="border-2 border-gray-200 text-xs my-2 p-2 py-3 h-30 w-full"
+                  ></textarea>
+                </div>
+                <div class="grid grid-cols-3 gap-2">
+                  <div
+                    class="flex justify-center items-center gap-2 col-span-3 border-4 border-gray-300 border-dashed rounded-md h-75 w-full"
+                  >
+                    <img src="assets/upload.png" alt="upload" />
+                    <p>Upload Image</p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center border-4 border-gray-300 border-dashed rounded-md h-25"
+                  >
+                    <img src="assets/camera.png" alt="camera" />
+                  </div>
+                  <div
+                    class="flex justify-center items-center border-4 border-gray-300 border-dashed rounded-md h-25"
+                  >
+                    <img src="assets/camera.png" alt="camera" />
+                  </div>
+                  <div
+                    class="flex justify-center items-center border-4 border-gray-300 border-dashed rounded-md h-25"
+                  >
+                    <img src="assets/camera.png" alt="camera" />
+                  </div>
+                </div>
+                <div class="flex justify-end my-5">
+                  <button
+                    class="text-white bg-sky-900 hover:bg-sky-950 rounded-lg px-10 py-3"
+                  >
+                    List new item
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="md:flex w-full hidden">
+              <form class="w-full">
+                <div class="flex gap-5">
+                  <div class="w-full">
+                    <p>Title</p>
+                    <input
+                      type="text"
+                      name="title"
+                      placeholder="Input Title"
+                      class="border-2 border-gray-200 rounded-lg w-full pl-5 py-1 my-2"
+                    />
+                    <p class="mt-5">Rental Price (HKD)</p>
+                    <div class="flex justify-between mb-5">
+                      <div>
+                        <p class="text-xs">Daily</p>
+                        <input
+                          type="number"
+                          placeholder="Daily"
+                          class="w-5/6 border-2 border-gray-200 rounded-lg pl-3 my-1"
+                        />
+                      </div>
+                      <div>
+                        <p class="text-xs">Weekly</p>
+                        <input
+                          type="number"
+                          placeholder="Weekly"
+                          class="w-5/6 border-2 border-gray-200 rounded-lg pl-3 my-1"
+                        />
+                      </div>
+                      <div>
+                        <p class="text-xs">Monthly</p>
+                        <input
+                          type="number"
+                          placeholder="Monthly"
+                          class="w-5/6 border-2 border-gray-200 rounded-lg pl-3 my-1"
+                        />
+                      </div>
+                      <div class="flex justify-between mb-5"></div>
+                    </div>
+                    <div>
+                      <p>Minimum Rental Period (Days)</p>
+                      <input
+                        type="number"
+                        placeholder="Minimum Rental Period (Days)"
+                        class="border-2 border-gray-200 rounded-lg py-3 pl-5 my-2 w-full"
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div class="mb-5">
+                      <p>Category</p>
+                      <input
+                        type="text"
+                        name="category"
+                        placeholder="Click to select category"
+                        class="border-2 border-gray-200 rounded-lg w-full pl-5 py-1 my-2"
+                      />
+                    </div>
+                    <div class="flex justify-between mb-5">
+                      <div>
+                        <p>Market value (HKD)</p>
+                        <input
+                          type="number"
+                          placeholder="Input Market Value (HKD)"
+                          class="border-2 border-gray-200 rounded-lg text-xs py-3 pl-3 my-2 w-45"
+                        />
+                      </div>
+                      <div>
+                        <p>Quantity</p>
+                        <input
+                          type="number"
+                          placeholder="1"
+                          class="border-2 border-gray-200 rounded-lg text-xs py-3 pl-3 my-2 w-45"
+                        />
+                      </div>
+                    </div>
+                    <div class="mb-5">
+                      <p>Location</p>
+                      <select
+                        id="myDropdown"
+                        name="location"
+                        class="block w-full px-3 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm my-2"
+                      >
+                        <option value="">Click to select location</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option4">Option 4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div class="grid grid-cols-3 gap-2">
+                      <div
+                        class="flex justify-center items-center gap-2 col-span-3 border-4 border-gray-300 border-dashed rounded-md h-50 w-full"
+                      >
+                        <img src="assets/upload.png" alt="upload" />
+                        <p>Upload Image</p>
+                      </div>
+                      <div
+                        class="flex justify-center items-center border-4 border-gray-300 border-dashed rounded-md h-25"
+                      >
+                        <img src="assets/camera.png" alt="camera" />
+                      </div>
+                      <div
+                        class="flex justify-center items-center border-4 border-gray-300 border-dashed rounded-md h-25"
+                      >
+                        <img src="assets/camera.png" alt="camera" />
+                      </div>
+                      <div
+                        class="flex justify-center items-center border-4 border-gray-300 border-dashed rounded-md h-25"
+                      >
+                        <img src="assets/camera.png" alt="camera" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-8/12 mb-5">
+                  <p>Description</p>
+                  <textarea
+                    name="description"
+                    placeholder="Input Description"
+                    class="border-2 border-gray-200 text-xs my-2 p-2 py-3 h-30 w-full"
+                  ></textarea>
+                </div>
+                <div class="flex justify-end my-5">
+                  <button
+                    class="text-white bg-sky-900 hover:bg-sky-950 rounded-lg px-10 py-3"
+                  >
+                    List new item
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div
+        class="xl:px-30 lg:px20 md:px-15 md:flex md:flex-wrap md:gap-5 bg-blue-50 p-5"
+      >
+        <div class="md:w-1/2">
+          <div>
+            <img src="assets/footer logo.png" alt="logo" class="my-10" />
+          </div>
+          <div>
+            <p>
+              Elephant Please was established in 2021 to alleviate and bring
+              awarness to excessive purchasing, over spending and its effect on
+              climate change. Elephant Please is a member of Revision AI
+              Limited.
+            </p>
+          </div>
+          <div class="flex w-full justify-around my-5">
+            <div>
+              <a href="https:facebookcom"
+                ><img src="assets/fb.png" alt="fb" class="p-5"
+              /></a>
+            </div>
+            <div>
+              <a href="https:twitter.com"
+                ><img
+                  src="assets/X.png"
+                  alt="x"
+                  class="bg-blue-900 rounded-full p-5"
+              /></a>
+            </div>
+            <div>
+              <a href="https:youtube.com"
+                ><img src="assets/yt.png" alt="yt" class="p-5"
+              /></a>
+            </div>
+            <div>
+              <a href="https:linkedin.com"
+                ><img src="assets/in.png" alt="in" class="p-5"
+              /></a>
+            </div>
+            <div>
+              <a href="https:instagram.com"
+                ><img src="assets/ig.png" alt="ig" class="p-5"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 class="md:my-5 text-blue-950 font-semibold text-lg my-2">
+            Elephant Please
+          </h1>
+          <div class="grid grid-cols-2 md:gap-5">
+            <div class="my-2">
+              <a href="how renting works.html">How renting works</a>
+            </div>
+            <div class="my-2">
+              <a href="terms of use.html">Terms of use</a>
+            </div>
+            <div class="my-2">
+              <a href="lend to start earning.html">How lending works</a>
+            </div>
+            <div class="my-2">
+              <a href="privacy policy.html">Privacy Policy</a>
+            </div>
+            <div class="my-2">
+              <a href="faqs.html">FAQs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="p-8 text-center bg-blue-100 font-semibold">
+          &copy; Elephant Please 2021
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
